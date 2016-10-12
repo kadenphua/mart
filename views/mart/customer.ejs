@@ -1,0 +1,19 @@
+<% include ../partials/header.ejs %>
+<h1>Customer Page</h1>
+
+<form method="post" action="/mart">
+  <div class="form-group">
+    <label for="name">Customer ID</label>
+    <input type="text" class="form-control" id="name" placeholder="Enter Customer ID" name= "newuser[id]">
+  </div>
+  <div class="form-group">
+    <label for="year">Customer Name</label>
+    <input type="text" class="form-control" id="year" placeholder="Enter Name" name = "newuser[name]">
+  </div>
+  <div class="form-group">
+    <label for="year">Gender</label>
+    <input type="text" class="form-control" id="year" placeholder="Enter Gender" name = "newuser[gender]">
+  </div>
+  <button type="submit" class="btn btn-default">Submit</button>
+</form>
+<% include ../partials/footer.ejs %>

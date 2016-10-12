@@ -1,0 +1,31 @@
+<% include ../partials/header.ejs %>
+<h1>Shipment Page</h1>
+
+<form method="post" action="/mart">
+  <div class="form-group">
+    <label for="name">Shipment</label>
+    <input type="text" class="form-control" id="name" placeholder="Enter Shipment ID" name= "shipment[Shipmentid]">
+  </div>
+  <div class="form-group">
+    <label for="year">Supplier ID</label>
+    <input type="text" class="form-control" id="year" placeholder="Enter Supplier ID" name = "shipment[supplierID]">
+  </div>
+  <div class="form-group">
+    <label for="year">Date Order</label>
+    <input type="text" class="form-control" id="year" placeholder="Enter Date" name = "shipment[OrderDate]">
+  </div>
+  <div class="form-group">
+    <label for="year">Date Receive</label>
+    <input type="text" class="form-control" id="year" placeholder="Enter Date" name = "shipment[ReceiveDate]">
+  </div>
+  <div class="form-group">
+    <label for="year">Type</label>
+    <input type="text" class="form-control" id="year" placeholder="Enter Type" name = "shipment[type]">
+  </div>
+  <div class="form-group">
+    <label for="year">Quantity</label>
+    <input type="text" class="form-control" id="year" placeholder="Enter Quantity" name = "shipment[quantity]">
+  </div>
+  <button type="submit" class="btn btn-default">Submit</button>
+</form>
+<% include ../partials/footer.ejs %>
